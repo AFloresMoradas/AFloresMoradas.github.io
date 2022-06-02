@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #4d88ff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .contenedor-pstn {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* GOOGLE FONTS---------------------------------------------------*/
+h1,
+h2 {
+    font-family: "Koulen", Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: "Smooch", Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+
+/* Contenedores---------------------------------------------------*/
+.contenedor-pstn {
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+}
+
+.secciones {
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+}
+
+.bla {
+    display: flex;
+}
+
+.logos {
+    background-color: black;
+    color: #cb6bfb;
+    display: flex;
+    flex-direction: column;
+}
+.infoExtra{
+    background-color: #cb6bfb;
+}
+.infoExtra .titulo {
+    padding-bottom: 20px;
+}
+
+.redes {
+    padding-bottom: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.redes a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Texto-----------------------------------------------------------*/
+#guardarMensaje {
+    opacity: 0;
+}
+
+form {
+    background-color: black;
+    color: #cb6bfb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form button {
+    margin: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.juegos {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 40rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    overflow: hidden;
+}
+.card1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.cont{
+    color: black;
+    font-size: larger;
+    position: relative;
+    left: 100%;
+}
+.fotos {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 23rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.perfil {
+    width: 50%;
+}
+
+.card {
+    grid-column: span 2;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    ;
+}
+
+.foto {
+    grid-column: span 1;
+    background-size: cover;
+    background-position: center;
+    ;
+}
+
+.mapa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+    top: 2%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.bar {
+    font-family: "Smooch", Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .7s;
+    background-color: #cb6bfb;
+}
+
+.steam {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.steam a {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.riot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.disc a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Efectos---------------------------------------*/
+.bar:first-child {
+    border-radius: 1rem 0 0 0;
+}
+
+.bar:last-child {
+    border-radius: 0 0 0 1rem;
+}
+
+.bar:hover {
+    padding-left: 5rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+.bar1:hover::after {
+    content: '- Inicio';
+}
+
+.bar2:hover::after {
+    content: '- Juegos';
+}
+
+.bar3:hover::after {
+    content: '- Mi Pueblo';
+}
+
+.bar4:hover::after {
+    content: '- Contactame';
+}
+
+.bar5:hover::after {
+    content: '- Plataformas';
+}
+.card1:hover{
+    background-size: 200%;
+}
+.card1:hover .cont{
+    left: 0;
+    padding: 10px;
+    transition: .3s;
+    background-color: #cb6bfb;
+    border-radius: 40px;
+}
+.card2:hover{
+    background-size: 200%;
+}
+.card2:hover .cont{
+    left: 0;
+    padding: 10px;
+    transition: .3s;
+    background-color: #cb6bfb;
+    border-radius: 40px;
+}
+.card3:hover{
+    background-size: 200%;
+}
+.card3:hover .cont{
+    left: 0;
+    padding: 10px;
+    transition: .3s;
+    background-color: #cb6bfb;
+    border-radius: 40px;
+}
